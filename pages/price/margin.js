@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import NavTop from '../Tags/navTop'
-import NavMidItem from '../Tags/navMidItem'
+import NavMidPrice from '../Tags/navMidPrice'
 
-export default function item(){
+export default function margin(){
   return(
     <div className="row">
       <Head>
       </Head>
       <header>
         <NavTop />
-        <NavMidItem />
+        <NavMidPrice />
       </header>
       <main>
-        this item index
+      margin
       </main>
     </div>
   )

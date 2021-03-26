@@ -3,7 +3,7 @@ import Link from 'next/link'
 import NavTop from '../Tags/navTop'
 import NavMidItem from '../Tags/navMidItem'
 
-export default function item(){
+export default function description(){
   return(
     <div className="row">
       <Head>
@@ -13,7 +13,7 @@ export default function item(){
         <NavMidItem />
       </header>
       <main>
-        this item index
+        desc
       </main>
     </div>
   )

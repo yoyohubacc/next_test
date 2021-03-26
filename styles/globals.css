@@ -6,7 +6,8 @@
 /* font-family: 'Noto Serif KR', serif; */
 /* font-weight: 700; */
 html,
-body {
+body,
+#_next {
   padding: 0;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -15,16 +16,18 @@ body {
   font-weight: 200;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  
-}
-
 nav a {
   text-align: center;
   vertical-align: middle;
+  color: inherit;
+  text-decoration: none;
 }
+
+
+.testRed{background-color: red;}
+.testBlue{background-color: blue;}
+.testGreen{background-color:green;}
+
 
 section{
   background-color: aqua;
@@ -60,6 +63,23 @@ section{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .col-1 {width: 50%;}
+  .col-2 {width: 50%;}
+  .col-3 {width: 50%;}
+  .col-4 {width: 50%;}
+  .col-5 {width: 50%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 100%;}
+  .col-8 {width: 100%;}
+  .col-9 {width: 100%;}
+  .col-10 {width: 100%;}
+  .col-11 {width: 100%;}
+  .col-12 {width: 100%;}
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   .col-1 {width: 25%;}
   .col-2 {width: 25%;}
   .col-3 {width: 25%;}
@@ -72,11 +92,13 @@ section{
   .col-10 {width: 100%;}
   .col-11 {width: 100%;}
   .col-12 {width: 100%;}
-  
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+  .flex-1{width: 50%;}
+  .flex-2{width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .col-1 {width: 16.66%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 33.33%;}
@@ -90,24 +112,6 @@ section{
   .col-11 {width: 100%;}
   .col-12 {width: 100%;}
 
-  .flex-1{width: 50%;}
-  .flex-2{width: 100%;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
   .flex-1{width: 33.33%;}
   .flex-2{width: 66.66%;}
 } 
@@ -126,6 +130,7 @@ section{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
   .flex-1{width: 25%;}
   .flex-2{width: 50%;}
   .flex-3{width: 75%;}
